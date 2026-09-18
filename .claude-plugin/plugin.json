@@ -1,0 +1,16 @@
+{
+  "name": "chatacademia",
+  "version": "1.0.0",
+  "description": "Evidence-grounded research questions, gap analysis and literature overviews using ChatAcademia.",
+  "author": {
+    "name": "ChatAcademia"
+  },
+  "homepage": "https://chatacademia.com",
+  "repository": "https://github.com/khanhduyvt0101/chatacademia-claude-plugin",
+  "keywords": [
+    "academic-research",
+    "literature-review",
+    "research-questions",
+    "mcp"
+  ]
+}
