@@ -1,0 +1,15 @@
+{
+  "name": "chatacademia",
+  "description": "ChatAcademia plugin for Claude: evidence-grounded academic research.",
+  "owner": {
+    "name": "ChatAcademia",
+    "email": "team@chatacademia.com"
+  },
+  "plugins": [
+    {
+      "name": "chatacademia",
+      "source": "./",
+      "description": "Evidence-grounded academic research in Claude, backed by real paper databases."
+    }
+  ]
+}

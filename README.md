@@ -2,67 +2,67 @@
 
 # ChatAcademia for Claude
 
-Evidence-grounded research questions, gap analysis and literature overviews with ChatAcademia. This standalone plugin contains a remote MCP configuration and three research skills. It contains no application server, executable hooks or credentials.
+ChatAcademia connects Claude to real academic databases and to eight research workflows, so literature work stays tied to sources you can open. The plugin bundles the ChatAcademia connector (a remote MCP server) and one skill per workflow. It contains no application server, no executable hooks or scripts that run for you, and no credentials.
 
 ## Skills
 
-- `/chatacademia:research-questions`: develop feasible questions from a topic and check their evidence.
-- `/chatacademia:research-gaps`: compare related studies around an existing question. No defensible gap is a valid result.
-- `/chatacademia:literature-overview`: search, screen and synthesize a bounded, source-linked literature overview.
+| Skill | Use it to |
+| --- | --- |
+| `literature-overview` | Search, screen and synthesize a bounded, source-linked literature overview. |
+| `research-gap` | Compare related studies around an existing question and decide whether a gap is worth pursuing. No defensible gap is a valid result. |
+| `brainstorm-research-questions` | Turn a topic into feasible research questions and subquestions grounded in the literature. |
+| `mock-peer-review` | Get reviewer-style feedback on a manuscript, abstract or proposal before submission. |
+| `hallucination-checker` | Check whether references and quoted claims exist and say what they are cited for. |
+| `find-research-grants` | Find funding calls and funded projects, and assess fit with your proposal. |
+| `extract-data` | Pull design, sample, measures and results out of study text, with exact supporting passages. |
+| `plan-academic-seminar` | Plan a seminar, journal club or talk: paper selection, timing and discussion questions. |
 
-Each skill retrieves the current workflow instructions from ChatAcademia rather than bundling a copy of server prompts.
+Skills are namespaced by the plugin, for example `/chatacademia:research-gap`. Claude also loads them automatically when your request matches. The skill text is generated from ChatAcademia's own server definitions (see [CONTRIBUTING.md](CONTRIBUTING.md)), so it matches the tools the connector offers.
 
-## Claude Code
+## Setup
 
-Clone this repository and load it for a session:
+**Claude (claude.ai and Cowork):** install ChatAcademia from the plugin directory, open the plugin's **Connectors** tab, connect ChatAcademia and sign in.
+
+**Claude Code:**
 
 ```sh
-git clone https://github.com/khanhduyvt0101/chatacademia-claude-plugin.git
-claude --plugin-dir ./chatacademia-claude-plugin
+/plugin marketplace add khanhduyvt0101/chatacademia-claude-plugin
+/plugin install chatacademia@chatacademia
 ```
 
-Use `/mcp` to connect ChatAcademia and complete OAuth sign-in in your browser. You need an active, verified ChatAcademia account. Never paste passwords or bearer tokens into the configuration.
+Then run `/mcp`, select ChatAcademia and complete the sign-in in your browser. To try a local copy instead: `claude --plugin-dir ./chatacademia-claude-plugin`.
 
-## Cowork
+You need a ChatAcademia account with a verified email and an active plan (sign up at [app.chatacademia.com](https://app.chatacademia.com)). Sign-in uses OAuth in your browser; nothing is pasted into configuration files, and you can revoke the connection from your ChatAcademia account at any time.
 
-Use Claude's custom plugin upload option to import the release ZIP. Connect ChatAcademia when prompted. If the bundled connector is unavailable, add a custom connector with `https://api.chatacademia.com/mcp` and authorize it. The skills locate tools by base name.
-
-Public directory availability depends on Anthropic review. This repository is not evidence that the plugin has been accepted or listed.
+If you already added ChatAcademia as a standalone connector, use the same URL (`https://api.chatacademia.com/mcp`); Claude then shows one set of tools, not two.
 
 ## Try it
 
-- “Use research-questions to develop three feasible questions about sleep and academic performance among university students.”
-- “Use research-gaps to investigate: Does improving sleep duration improve academic performance among university students? Keep the original question and compare overlapping studies.”
-- “Use literature-overview for the topic sleep and academic performance, asking: What associations are reported among university students? Keep the review bounded and link sources.”
+- "Use research-gap on: Does improving sleep duration improve academic performance among university students?"
+- "Give me a literature overview of sleep and academic performance, question: what associations are reported among university students? Keep it bounded and link every source."
+- "Check these five references for hallucinated entries: ..."
 
-The literature-overview workflow requires both a topic and a research question. The gap workflow requires an existing question. If inputs are missing, the skill asks before research. Workflow retrieval supplies instructions; it does not itself produce research results.
+## What this plugin sends and fetches
+
+- **Connector endpoint:** `https://api.chatacademia.com/mcp`, operated by ChatAcademia. It is the only network destination the plugin declares (`network.hosts` in `plugin.json`).
+- **What is sent:** only when a ChatAcademia tool runs, Claude sends the tool arguments: search queries, reference titles, and any manuscript, abstract or study text you ask it to analyze. ChatAcademia also receives your OAuth identity (name, email, verification status) and the tool name and timing.
+- **What ChatAcademia fetches for you:** paper metadata and abstracts from public databases (PubMed, OpenAlex, Crossref, Semantic Scholar, arXiv, Europe PMC, ERIC, Google Scholar), grant listings (Grants.gov, NIH RePORTER, CORDIS, UKRI) and Crossref reference checks. It does not retrieve paywalled full text.
+- **What is stored:** ChatAcademia records the tool name, calling app, status, timing and credits used so you can review your usage; it does not store tool inputs or outputs in that log. The optional memory tools (`get_my_memory`, `remember_about_me`) read and write ChatAcademia's own profile for you, only when you ask. They never access Claude's memory or your Claude chats.
+- **Credits:** research tools use credits from your ChatAcademia plan. Reading skills, balance and plan information costs nothing. Skills never buy, upgrade or send feedback unless you explicitly ask.
+- **Not in this plugin:** no telemetry, no local scripts that run on your machine, no credential store.
+
+Your data is handled under ChatAcademia's [privacy policy](https://www.chatacademia.com/privacy) and [terms](https://www.chatacademia.com/terms). ChatAcademia does not use your content to train AI models. Claude's own data handling is governed by Anthropic's policies. ChatAcademia is for people aged 18 and over.
+
+## Limits you should know
+
+Results can be incomplete. Abstracts and metadata are not full text, an empty search is not evidence of absence, and a matched reference only shows the paper exists, not that it supports the claim. The skills label what they actually read and do not promise exhaustive reviews, saved projects or access to your private libraries (Zotero, Mendeley, Drive, Dropbox) through Claude.
 
 ## Troubleshooting
 
-If tools are unavailable, complete connector authorization and start a new Claude session or reload the plugin. Inspect `/mcp` in Claude Code for connection status. Do not replace OAuth with tokens in this repository.
+- *Tools not available:* connect and authorize ChatAcademia, then start a new session or run `/reload-plugins`. Check `/mcp` in Claude Code for status.
+- *Credit or permission errors:* stop and check your balance and plan in ChatAcademia; the skills do not retry in a loop.
+- *Need help:* email [team@chatacademia.com](mailto:team@chatacademia.com) or open an [issue](https://github.com/khanhduyvt0101/chatacademia-claude-plugin/issues). Report vulnerabilities as described in [SECURITY.md](SECURITY.md).
 
-If a workflow reports invalid arguments, inspect its current discovery schema. Omit absent optional values rather than sending empty strings. Research calls must respect tool limits and the user's budget. On credit or permission errors, stop and resolve the account issue; do not retry indefinitely.
+## License
 
-## Credits and scope
-
-Workflow discovery and retrieval cost zero ChatAcademia credits. Research tools consume ChatAcademia credits. OAuth consent determines the available server tools; this plugin does not restrict server permissions. The skills do not request purchases, plan upgrades or feedback unless the user asks.
-
-Research results can be incomplete. Skills distinguish paper metadata, abstracts and supplied full text, preserve original questions and do not infer novelty from empty searches. They do not promise exhaustive reviews, persistent projects or private library integrations.
-
-## Privacy, security and rights
-
-The plugin sends research inputs through the ChatAcademia connector when tools are called. The ChatAcademia service is governed by its [privacy policy](https://chatacademia.com/privacy) and [terms](https://chatacademia.com/terms). Claude's own data handling is governed by Anthropic's policies. No separate telemetry or credential store is bundled here.
-
-See [SECURITY.md](SECURITY.md) for reporting vulnerabilities. Contact: [team@chatacademia.com](mailto:team@chatacademia.com).
-
-No open-source license is granted by this repository. Rights in this plugin are reserved by their respective holders. Public availability does not grant rights in the private ChatAcademia application or service.
-
-## Validation
-
-The manifest and archive are checked against [Claude's plugin reference](https://code.claude.com/docs/en/plugins-reference). Structural validation is separate from live Claude import, OAuth authorization and research execution. See [CONTRIBUTING.md](CONTRIBUTING.md) for validation and maintenance instructions. Structural checks do not assert successful OAuth or research execution.
-
-## Branding
-
-The [PNG](assets/chatacademia-icon.png) and [SVG](assets/chatacademia-icon.svg) are existing ChatAcademia app icons, copied unchanged. They preserve the established blue background and white mark. Their inclusion displays the logo in this README and supplies assets for directory review.
-
-Claude's documented plugin manifest has no supported logo or icon field. No such field is added here. A logo in this repository does not guarantee an icon on a Claude catalog card; that requires a supported directory branding mechanism or Anthropic review. See [BRANDING.md](BRANDING.md) for asset provenance and review links.
+The plugin files are MIT licensed (see [LICENSE](LICENSE)). The ChatAcademia name and logo are not covered, see [BRANDING.md](BRANDING.md). The ChatAcademia service itself is separate and governed by its terms.
