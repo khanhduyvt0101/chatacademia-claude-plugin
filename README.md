@@ -34,7 +34,7 @@ Then run `/mcp`, select ChatAcademia and complete the sign-in in your browser. T
 
 You need a ChatAcademia account with a verified email and an active plan (sign up at [app.chatacademia.com](https://app.chatacademia.com)). Sign-in uses OAuth in your browser; nothing is pasted into configuration files, and you can revoke the connection from your ChatAcademia account at any time.
 
-If you already added ChatAcademia as a standalone connector, use the same URL (`https://api.chatacademia.com/mcp`); Claude then shows one set of tools, not two.
+If you already added ChatAcademia as a standalone connector, use the same URL (`https://api.chatacademia.com/mcp/claude`); Claude then shows one set of tools, not two. Full documentation: [chatacademia.com/claude](https://www.chatacademia.com/claude).
 
 ## Try it
 
@@ -44,7 +44,7 @@ If you already added ChatAcademia as a standalone connector, use the same URL (`
 
 ## What this plugin sends and fetches
 
-- **Connector endpoint:** `https://api.chatacademia.com/mcp`, operated by ChatAcademia. It is the only network destination the plugin declares (`network.hosts` in `plugin.json`).
+- **Connector endpoint:** `https://api.chatacademia.com/mcp/claude`, operated by ChatAcademia. It is the only network destination the plugin declares (`network.hosts` in `plugin.json`).
 - **What is sent:** only when a ChatAcademia tool runs, Claude sends the tool arguments: search queries, reference titles, and any manuscript, abstract or study text you ask it to analyze. ChatAcademia also receives your OAuth identity (name, email, verification status) and the tool name and timing.
 - **What ChatAcademia fetches for you:** paper metadata and abstracts from public databases (PubMed, OpenAlex, Crossref, Semantic Scholar, arXiv, Europe PMC, ERIC, Google Scholar), grant listings (Grants.gov, NIH RePORTER, CORDIS, UKRI) and Crossref reference checks. It does not retrieve paywalled full text.
 - **What is stored:** ChatAcademia records the tool name, calling app, status, timing and credits used so you can review your usage; it does not store tool inputs or outputs in that log. The optional memory tools (`get_my_memory`, `remember_about_me`) read and write ChatAcademia's own profile for you, only when you ask. They never access Claude's memory or your Claude chats.

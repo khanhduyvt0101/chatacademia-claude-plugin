@@ -2,7 +2,7 @@
   "mcpServers": {
     "chatacademia": {
       "type": "http",
-      "url": "https://api.chatacademia.com/mcp"
+      "url": "https://api.chatacademia.com/mcp/claude"
     }
   }
 }
