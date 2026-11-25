@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "chatacademia",
-      "source": "./",
+      "source": "./plugins/chatacademia",
       "description": "Evidence-grounded academic research in Claude, backed by real paper databases."
     }
   ]

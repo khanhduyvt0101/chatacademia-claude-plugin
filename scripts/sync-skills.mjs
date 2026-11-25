@@ -20,7 +20,7 @@ if (caIndex === -1 || !args[caIndex + 1]) {
 	process.exit(2);
 }
 const ca = resolve(args[caIndex + 1]);
-const skillsDir = join(dirname(fileURLToPath(import.meta.url)), "..", "skills");
+const skillsDir = join(dirname(fileURLToPath(import.meta.url)), "..", "plugins", "chatacademia", "skills");
 
 const generator = `
 const root = process.argv[1];
@@ -76,17 +76,17 @@ for (const [name, text] of generated) {
 	const current = existsSync(file) ? readFileSync(file, "utf8") : null;
 	if (current === text) continue;
 	stale = true;
-	if (check) console.error(`stale: skills/${name}/SKILL.md`);
+	if (check) console.error(`stale: plugins/chatacademia/skills/${name}/SKILL.md`);
 	else {
 		mkdirSync(dirname(file), { recursive: true });
 		writeFileSync(file, text);
-		console.log(`wrote skills/${name}/SKILL.md`);
+		console.log(`wrote plugins/chatacademia/skills/${name}/SKILL.md`);
 	}
 }
 const extra = existsSync(skillsDir) ? readdirSync(skillsDir).filter((d) => !generated.has(d)) : [];
 for (const d of extra) {
 	stale = true;
-	if (check) console.error(`stale: skills/${d} is no longer defined by the server`);
+	if (check) console.error(`stale: plugins/chatacademia/skills/${d} is no longer defined by the server`);
 	else rmSync(join(skillsDir, d), { recursive: true });
 }
 if (check) process.exit(stale ? 1 : 0);

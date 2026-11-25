@@ -1,7 +1,7 @@
 {
   "name": "chatacademia",
   "displayName": "ChatAcademia",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Evidence-grounded academic research in Claude: literature overviews, research gaps, research questions, citation checks, mock peer review, grants, data extraction and seminar planning, backed by real paper databases.",
   "author": {
     "name": "ChatAcademia",
@@ -25,8 +25,5 @@
   "documentationUrl": "https://www.chatacademia.com/claude",
   "supportUrl": "https://github.com/khanhduyvt0101/chatacademia-claude-plugin/issues",
   "privacyPolicyUrl": "https://www.chatacademia.com/privacy",
-  "termsOfServiceUrl": "https://www.chatacademia.com/terms",
-  "network": {
-    "hosts": ["api.chatacademia.com"]
-  }
+  "termsOfServiceUrl": "https://www.chatacademia.com/terms"
 }
