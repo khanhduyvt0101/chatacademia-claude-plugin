@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "chatacademia",
+  "version": "1.0.0",
+  "description": "Academic research tools: search papers and grants, verify citations, find research gaps, extract study data and get mock peer review.",
+  "author": {
+    "name": "ChatAcademia",
+    "email": "team@chatacademia.com",
+    "url": "https://www.chatacademia.com"
+  },
+  "homepage": "https://www.chatacademia.com/claude",
+  "repository": "https://github.com/khanhduyvt0101/chatacademia-claude-plugin",
+  "license": "MIT",
+  "keywords": ["academic research", "literature review", "papers", "citations", "references", "research gap", "peer review", "grants", "pubmed", "systematic review"]
+}

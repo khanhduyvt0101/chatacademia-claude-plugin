@@ -1,0 +1,19 @@
+{
+  "name": "chatacademia",
+  "displayName": "ChatAcademia",
+  "version": "1.0.0",
+  "description": "Academic research tools: search papers and grants, verify citations, find research gaps, extract study data and get mock peer review.",
+  "author": {
+    "name": "ChatAcademia",
+    "email": "team@chatacademia.com"
+  },
+  "publisher": "ChatAcademia",
+  "homepage": "https://www.chatacademia.com/claude",
+  "repository": "https://github.com/khanhduyvt0101/chatacademia-claude-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["academic-research", "literature-review", "citations", "research-gap", "peer-review", "grants", "mcp"],
+  "category": "integrations",
+  "tags": ["research", "academic", "citations", "mcp"],
+  "mcpServers": "./mcp.json"
+}

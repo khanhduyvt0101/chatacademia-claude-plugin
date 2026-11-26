@@ -1,0 +1,17 @@
+{
+  "name": "chatacademia",
+  "owner": {
+    "name": "ChatAcademia",
+    "email": "team@chatacademia.com"
+  },
+  "metadata": {
+    "description": "ChatAcademia for Cursor: evidence-grounded academic research tools over a remote MCP server."
+  },
+  "plugins": [
+    {
+      "name": "chatacademia",
+      "source": "cursor/chatacademia",
+      "description": "Academic research tools: search papers and grants, verify citations, review literature and drafts."
+    }
+  ]
+}

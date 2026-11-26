@@ -34,7 +34,7 @@ Then run `/mcp`, select ChatAcademia and complete the sign-in in your browser. T
 
 You need a ChatAcademia account with a verified email and an active plan (sign up at [app.chatacademia.com](https://app.chatacademia.com)). Sign-in uses OAuth in your browser; nothing is pasted into configuration files, and you can revoke the connection from your ChatAcademia account at any time.
 
-If you already added ChatAcademia as a standalone connector, use the same URL (`https://api.chatacademia.com/mcp/claude`); Claude then shows one set of tools, not two. Full documentation: [chatacademia.com/claude](https://www.chatacademia.com/claude).
+If you already added ChatAcademia as a standalone connector, use the same URL (`https://api.chatacademia.com/mcp/claude`); Claude then shows one set of tools, not two. Full documentation: [chatacademia.com/claude](https://www.chatacademia.com/claude). Using another AI app? See [install ChatAcademia in other agents](https://github.com/khanhduyvt0101/chatacademia-claude-plugin#install-chatacademia-in-your-agent).
 
 ## Try it
 

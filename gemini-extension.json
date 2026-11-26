@@ -1,0 +1,12 @@
+{
+  "name": "chatacademia",
+  "version": "1.0.0",
+  "description": "Academic research tools: search papers and grants, verify citations, find research gaps, extract study data and get mock peer review.",
+  "mcpServers": {
+    "chatacademia": {
+      "url": "https://api.chatacademia.com/mcp/gemini",
+      "type": "http"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
