@@ -26,7 +26,7 @@
     "displayName": "ChatAcademia",
     "shortDescription": "Evidence-grounded research",
     "longDescription": "ChatAcademia is an AI research assistant for academics. It connects ChatGPT and Codex to real scholarly databases (PubMed, OpenAlex, Crossref, Semantic Scholar, arXiv, Europe PMC, ERIC) and grant sources (Grants.gov, NIH RePORTER, CORDIS, UKRI), so literature work stays tied to sources you can open.\n\nUse it to search papers and fetch abstracts, verify up to five references at a time, find funding calls and funded projects, turn a topic into feasible research questions, draft search strategies and review protocols, identify research gaps in the evidence you collected, extract study data with exact supporting passages, get reviewer-style feedback on a manuscript, and plan a seminar or journal club.\n\nEight guided skills walk through complete workflows: literature overview, research gap, research questions, hallucination checker, mock peer review, research grants, data extraction and seminar planning. Loading a skill runs no research by itself.\n\nSign in with your ChatAcademia account. Results are metadata and available abstracts, not paywalled full text, and analysis tools work on the text you supply. ChatAcademia keeps the tool name, time, status and credits of each request, not your inputs or outputs, and does not use your content to train AI models.",
-    "developerName": "ChatAcademia",
+    "developerName": "Pumpkint LLC",
     "category": "Education & Research",
     "capabilities": [
       "Search scholarly papers and fetch available abstracts",
