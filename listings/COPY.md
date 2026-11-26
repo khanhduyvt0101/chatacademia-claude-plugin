@@ -16,19 +16,19 @@ table at the end) so installs can be traced per channel. Never reuse another cha
 | Pricing | https://www.chatacademia.com/#pricing (7-day free trial; plans from $15/month with monthly credits) |
 | Privacy | https://www.chatacademia.com/privacy |
 | Terms | https://www.chatacademia.com/terms |
-| Support | team@chatacademia.com · https://github.com/khanhduyvt0101/chatacademia-claude-plugin/issues |
-| Security | https://github.com/khanhduyvt0101/chatacademia-claude-plugin/blob/main/SECURITY.md |
-| Repository | https://github.com/khanhduyvt0101/chatacademia-claude-plugin (MIT) |
+| Support | team@chatacademia.com · https://github.com/orchestero/chatacademia-claude-plugin/issues |
+| Security | https://github.com/orchestero/chatacademia-claude-plugin/blob/main/SECURITY.md |
+| Repository | https://github.com/orchestero/chatacademia-claude-plugin (MIT) |
 | Transport | Remote, Streamable HTTP. No local install, no binary, no Docker image |
 | Auth | OAuth 2.1 (dynamic client registration and client ID metadata documents, PKCE). No API key, no headers |
 | Contact for reviewers | team@chatacademia.com |
 
 ## Logos and screenshots (raw GitHub URLs, live after push to `main`)
 
-- SVG: https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon.svg
-- PNG 512×512: https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon-512.png
-- PNG 400×400 (Cline): https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon-400.png
-- Screenshots (1440×900 PNG), base `https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/screenshots/`:
+- SVG: https://raw.githubusercontent.com/orchestero/chatacademia-claude-plugin/main/assets/chatacademia-icon.svg
+- PNG 512×512: https://raw.githubusercontent.com/orchestero/chatacademia-claude-plugin/main/assets/chatacademia-icon-512.png
+- PNG 400×400 (Cline): https://raw.githubusercontent.com/orchestero/chatacademia-claude-plugin/main/assets/chatacademia-icon-400.png
+- Screenshots (1440×900 PNG), base `https://raw.githubusercontent.com/orchestero/chatacademia-claude-plugin/main/assets/screenshots/`:
   `01-overview.png`, `02-tools.png`, `03-skills.png`, `04-connect.png`, `05-hallucination-checker.png`.
   They are public website pages. Screenshots of ChatAcademia running inside an agent (Cursor, VS Code) need a signed-in
   account with a plan and are not in this kit yet.
@@ -141,7 +141,7 @@ Logo = 512 PNG unless stated. Contact email everywhere: team@chatacademia.com.
 
 | Target | Where | Fields → values |
 | --- | --- | --- |
-| **mcp.so** | Free: comment on https://github.com/chatmcp/mcpso/issues/1 (paid $39 form at mcp.so/submit skips review) | Comment: `ChatAcademia: a remote MCP server for academic research.` + Short description + `- Site and setup: https://www.chatacademia.com/claude` + `- Endpoint: https://api.chatacademia.com/mcp/mcpso (Streamable HTTP, OAuth)` + `- Official MCP Registry: com.chatacademia/chatacademia` + `- Repo: https://github.com/khanhduyvt0101/chatacademia-claude-plugin`. On the form: tab **Remote Server**, Repository URL = repo, Name = ChatAcademia. |
+| **mcp.so** | Free: comment on https://github.com/chatmcp/mcpso/issues/1 (paid $39 form at mcp.so/submit skips review) | Comment: `ChatAcademia: a remote MCP server for academic research.` + Short description + `- Site and setup: https://www.chatacademia.com/claude` + `- Endpoint: https://api.chatacademia.com/mcp/mcpso (Streamable HTTP, OAuth)` + `- Official MCP Registry: com.chatacademia/chatacademia` + `- Repo: https://github.com/orchestero/chatacademia-claude-plugin`. On the form: tab **Remote Server**, Repository URL = repo, Name = ChatAcademia. |
 | **MCP Market** | https://mcpmarket.com/submit | Tab "MCP Server": repo-url = repo URL, submitter-email, Try Now link = https://www.chatacademia.com/claude → "Submit to free queue" (4–6 weeks). The "Remote MCP" tab (endpoint /mcp/mcpmarket) is a separate **paid** listing (needs key features ≥ N, use cases, FAQs): owner's call; reuse Feature bullets, Example prompts and the FAQ below. |
 | **mcpservers.org** | https://mcpservers.org/submit | Server Name = ChatAcademia · Category = **Search** (no Research option; "Other" is the alternative) · Short Description = One-liner · Repository/Website/Docs = https://www.chatacademia.com/claude · Official MCP Registry Name = `com.chatacademia/chatacademia` · [x] supports remote connections → Remote Server URL = https://api.chatacademia.com/mcp/mcpservers · Authentication = OAuth · Contact Email. Free (2 weeks) or $39 premium: owner's call. |
 | **mcp.directory** | https://mcp.directory/submit (also auto-imports registry entries) | GitHub Repository URL = repo · npm/PyPI = empty · Short Description (≤100) = One-liner · Email. No endpoint field: after listing, email them to set the endpoint to https://api.chatacademia.com/mcp/mcpdirectory and claim the registry import. |

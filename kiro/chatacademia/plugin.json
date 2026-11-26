@@ -9,7 +9,7 @@
     "url": "https://www.chatacademia.com"
   },
   "homepage": "https://www.chatacademia.com/claude",
-  "repository": "https://github.com/khanhduyvt0101/chatacademia-claude-plugin",
+  "repository": "https://github.com/orchestero/chatacademia-claude-plugin",
   "license": "MIT",
   "keywords": ["academic research", "literature review", "papers", "citations", "references", "research gap", "peer review", "grants", "pubmed", "systematic review"]
 }

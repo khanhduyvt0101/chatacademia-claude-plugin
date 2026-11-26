@@ -7,7 +7,7 @@ Endpoint: `https://api.chatacademia.com/mcp/antigravity`
   automatic), `/antigravity/chatacademia/assets/logo.png` (512×512).
 - Validated: `agy plugin validate --strict ./antigravity/chatacademia` → `✔ Validation passed` (mcpServers 1).
 - Submit: interest form https://forms.gle/2EX5RFYPoJe1UgxR9 (fields not visible without opening it). Answers: plugin
-  repo `https://github.com/khanhduyvt0101/chatacademia-claude-plugin`, path `antigravity/chatacademia`, contact
+  repo `https://github.com/orchestero/chatacademia-claude-plugin`, path `antigravity/chatacademia`, contact
   team@chatacademia.com, descriptions and logo from `COPY.md`.
 - Open question: installing a plugin from a repo subfolder is not documented. If reviewers need a repo root, publish
   the folder as its own small repo.

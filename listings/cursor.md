@@ -13,12 +13,12 @@ Files (outside the Claude plugin folder so each keeps its own URL):
 ## Cursor Marketplace
 
 Submit at https://cursor.com/marketplace/publish with the repo URL
-`https://github.com/khanhduyvt0101/chatacademia-claude-plugin`. Every plugin and update is reviewed by hand.
+`https://github.com/orchestero/chatacademia-claude-plugin`. Every plugin and update is reviewed by hand.
 Fields: use `COPY.md` (name, one-liner, long description, logo 512 PNG, category Integrations, tags).
 
 ## cursor.directory (https://cursor.directory/plugins/new)
 
-Paste only `https://github.com/khanhduyvt0101/chatacademia-claude-plugin` (subfolder URLs are ignored). Its scanner
+Paste only `https://github.com/orchestero/chatacademia-claude-plugin` (subfolder URLs are ignored). Its scanner
 reads the root `.cursor-plugin/marketplace.json` and finds `cursor/chatacademia/.cursor-plugin/plugin.json` +
 `mcp.json`. It takes the logo only from a root manifest `logo`, which Cursor's marketplace schema does not allow, so
 cursor.directory may show the GitHub owner avatar; fix the image in its edit form after it is listed.

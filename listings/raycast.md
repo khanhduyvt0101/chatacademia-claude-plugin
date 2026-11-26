@@ -13,7 +13,7 @@ PR #33872, merged 2026-11-25). Title: `[MCP Registry] Add ChatAcademia MCP Serve
     title: "ChatAcademia",
     description:
       "ChatAcademia, the AI research assistant for academics. Search papers and grants across scholarly databases, verify citations, find research gaps, extract study data and get mock peer review, with 8 guided research workflows. Hosted Streamable HTTP server with OAuth 2.1 sign-in (dynamic client registration and PKCE), a direct HTTP connection in Raycast and an `mcp-remote` fallback. A ChatAcademia account is required (7-day free trial).",
-    icon: "https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon-512.png",
+    icon: "https://raw.githubusercontent.com/orchestero/chatacademia-claude-plugin/main/assets/chatacademia-icon-512.png",
     homepage: "https://www.chatacademia.com/claude",
     configuration: {
       command: "npx",

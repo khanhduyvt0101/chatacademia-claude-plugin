@@ -14,9 +14,9 @@ Please consider adding ChatAcademia to MCP Server Finder.
 - Official MCP Registry name: com.chatacademia/chatacademia
 - Description: Academic research tools: search papers and grants, verify citations, review literature and drafts.
 - Category: Research / Education
-- Repository (MIT): https://github.com/khanhduyvt0101/chatacademia-claude-plugin
+- Repository (MIT): https://github.com/orchestero/chatacademia-claude-plugin
 - Website and docs: https://www.chatacademia.com · https://www.chatacademia.com/claude
-- Logo: https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon-512.png
+- Logo: https://raw.githubusercontent.com/orchestero/chatacademia-claude-plugin/main/assets/chatacademia-icon-512.png
 - Pricing: 7-day free trial, then paid plans with monthly credits
 
 Thank you,

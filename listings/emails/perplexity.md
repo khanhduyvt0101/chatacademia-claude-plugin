@@ -16,7 +16,7 @@ Crossref and other indexes, grant search, research-gap analysis, data extraction
 
 - Endpoint for Perplexity: https://api.chatacademia.com/mcp/perplexity
 - Docs: https://www.chatacademia.com/claude · Privacy: https://www.chatacademia.com/privacy · Terms: https://www.chatacademia.com/terms
-- Repository and logos: https://github.com/khanhduyvt0101/chatacademia-claude-plugin
+- Repository and logos: https://github.com/orchestero/chatacademia-claude-plugin
 
 We can provide a test account with credits. Who would be the right contact for connector listings?
 

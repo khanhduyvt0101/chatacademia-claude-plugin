@@ -3,10 +3,10 @@
   "name": "com.chatacademia/chatacademia",
   "title": "ChatAcademia",
   "description": "Academic research tools: search papers and grants, verify citations, review literature and drafts.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://www.chatacademia.com/claude",
   "repository": {
-    "url": "https://github.com/khanhduyvt0101/chatacademia-claude-plugin",
+    "url": "https://github.com/orchestero/chatacademia-claude-plugin",
     "source": "github"
   },
   "icons": [

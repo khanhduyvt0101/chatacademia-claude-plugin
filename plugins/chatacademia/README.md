@@ -26,7 +26,7 @@ Skills are namespaced by the plugin, for example `/chatacademia:research-gap`. C
 **Claude Code:**
 
 ```sh
-/plugin marketplace add khanhduyvt0101/chatacademia-claude-plugin
+/plugin marketplace add orchestero/chatacademia-claude-plugin
 /plugin install chatacademia@chatacademia
 ```
 
@@ -34,7 +34,7 @@ Then run `/mcp`, select ChatAcademia and complete the sign-in in your browser. T
 
 You need a ChatAcademia account with a verified email and an active plan (sign up at [app.chatacademia.com](https://app.chatacademia.com)). Sign-in uses OAuth in your browser; nothing is pasted into configuration files, and you can revoke the connection from your ChatAcademia account at any time.
 
-If you already added ChatAcademia as a standalone connector, use the same URL (`https://api.chatacademia.com/mcp/claude`); Claude then shows one set of tools, not two. Full documentation: [chatacademia.com/claude](https://www.chatacademia.com/claude). Using another AI app? See [install ChatAcademia in other agents](https://github.com/khanhduyvt0101/chatacademia-claude-plugin#install-chatacademia-in-your-agent).
+If you already added ChatAcademia as a standalone connector, use the same URL (`https://api.chatacademia.com/mcp/claude`); Claude then shows one set of tools, not two. Full documentation: [chatacademia.com/claude](https://www.chatacademia.com/claude). Using another AI app? See [install ChatAcademia in other agents](https://github.com/orchestero/chatacademia-claude-plugin#install-chatacademia-in-your-agent).
 
 ## Try it
 
@@ -61,7 +61,7 @@ Results can be incomplete. Abstracts and metadata are not full text, an empty se
 
 - *Tools not available:* connect and authorize ChatAcademia, then start a new session or run `/reload-plugins`. Check `/mcp` in Claude Code for status.
 - *Credit or permission errors:* stop and check your balance and plan in ChatAcademia; the skills do not retry in a loop.
-- *Need help:* email [team@chatacademia.com](mailto:team@chatacademia.com) or open an [issue](https://github.com/khanhduyvt0101/chatacademia-claude-plugin/issues). Report vulnerabilities as described in [SECURITY.md](SECURITY.md).
+- *Need help:* email [team@chatacademia.com](mailto:team@chatacademia.com) or open an [issue](https://github.com/orchestero/chatacademia-claude-plugin/issues). Report vulnerabilities as described in [SECURITY.md](SECURITY.md).
 
 ## License
 

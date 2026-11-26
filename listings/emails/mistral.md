@@ -17,7 +17,7 @@ grant search, research-gap analysis, data extraction and mock peer review.
 
 - Endpoint for Le Chat: https://api.chatacademia.com/mcp/mistral
 - Docs: https://www.chatacademia.com/claude · Privacy: https://www.chatacademia.com/privacy · Terms: https://www.chatacademia.com/terms
-- Repository and logos: https://github.com/khanhduyvt0101/chatacademia-claude-plugin
+- Repository and logos: https://github.com/orchestero/chatacademia-claude-plugin
 
 We can provide a test account with credits and any listing assets you need. Could you tell us the process for
 directory inclusion?

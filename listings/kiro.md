@@ -5,14 +5,14 @@ Endpoint: `https://api.chatacademia.com/mcp/kiro`
 - Files (Agent Plugins 1.0.0, which Kiro powers support since 2026-08): `/kiro/chatacademia/plugin.json` and
   `/kiro/chatacademia/mcp.json` (`type: streamable-http`). Both validated against the agent-plugins.org 1.0.0 JSON
   schemas. Kiro installs powers from a repo subfolder URL:
-  `https://github.com/khanhduyvt0101/chatacademia-claude-plugin/tree/main/kiro/chatacademia`.
+  `https://github.com/orchestero/chatacademia-claude-plugin/tree/main/kiro/chatacademia`.
 - Caveat: Kiro's own docs show `"url"` alone and its official powers use `"type": "http"`; the spec value
   `streamable-http` is what the schema requires. If a Kiro test install does not connect, change `type` to `http`.
 - Submit form https://kiro.dev/powers/submit/:
   - Resource type: **MCP server** (or Power, pointing at the folder above)
   - First/last name: the owner's · Email: team@chatacademia.com · Organization: ChatAcademia
   - Use case (3–4 words): **Academic research and citations**
-  - Public GitHub repository URL: `https://github.com/khanhduyvt0101/chatacademia-claude-plugin`
+  - Public GitHub repository URL: `https://github.com/orchestero/chatacademia-claude-plugin`
   - Logo: `assets/chatacademia-icon.svg` (SVG recommended)
   - Domain/problem: the short description from `COPY.md`
   - Submitting accepts the Kiro Registry Publisher Terms (owner should be OK with that).

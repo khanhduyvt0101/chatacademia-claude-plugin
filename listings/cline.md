@@ -13,8 +13,8 @@ you tested it).
 Open an issue with template https://github.com/cline/mcp-marketplace/issues/new?template=mcp-server-submission.yml
 
 - Title: `[Server Submission]: ChatAcademia (remote, OAuth)`
-- GitHub Repository URL: `https://github.com/khanhduyvt0101/chatacademia-claude-plugin`
-- Logo Image: `https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon-400.png`
+- GitHub Repository URL: `https://github.com/orchestero/chatacademia-claude-plugin`
+- Logo Image: `https://raw.githubusercontent.com/orchestero/chatacademia-claude-plugin/main/assets/chatacademia-icon-400.png`
 - Installation Testing: [x] tested with README.md / llms-install.md · [x] stable and ready for public use
 - Additional Information:
 

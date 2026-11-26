@@ -17,7 +17,7 @@ research-gap analysis, data extraction and mock peer review.
 
 - Official MCP Registry entry: `com.chatacademia/chatacademia`
 - Endpoint for GitHub / VS Code users: https://api.chatacademia.com/mcp/vscode
-- Repository (MIT): https://github.com/khanhduyvt0101/chatacademia-claude-plugin
+- Repository (MIT): https://github.com/orchestero/chatacademia-claude-plugin
 - Docs: https://www.chatacademia.com/claude · Privacy: https://www.chatacademia.com/privacy
 - VS Code install link: see the repository README ("Install in VS Code")
 

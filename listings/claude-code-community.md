@@ -12,14 +12,14 @@ PR adding `cli-tool/components/mcps/research/chatacademia.json` = `listings/clau
 
 ## claudemarketplaces.com/submit
 
-Sign in with GitHub (khanhduyvt0101). Submit two things:
-- Plugin marketplace repo: `https://github.com/khanhduyvt0101/chatacademia-claude-plugin` (marketplace `chatacademia`,
-  install `/plugin marketplace add khanhduyvt0101/chatacademia-claude-plugin`).
+Sign in with GitHub (orchestero). Submit two things:
+- Plugin marketplace repo: `https://github.com/orchestero/chatacademia-claude-plugin` (marketplace `chatacademia`,
+  install `/plugin marketplace add orchestero/chatacademia-claude-plugin`).
 - MCP server (if the form asks for a URL): `https://api.chatacademia.com/mcp/claudecode`, transport HTTP, OAuth.
 Texts from `COPY.md`. Free; $9 priority review is the owner's call.
 
 ## claudepluginhub.com
 
 Auto-indexes repos with `.claude-plugin/plugin.json`; if not indexed yet, use "Submit your plugin" with the repo URL
-`https://github.com/khanhduyvt0101/chatacademia-claude-plugin`. Site blocks headless browsers (Cloudflare), so use a
+`https://github.com/orchestero/chatacademia-claude-plugin`. Site blocks headless browsers (Cloudflare), so use a
 real browser profile.
