@@ -22,6 +22,8 @@ node scripts/sync-skills.mjs --ca /path/to/chatacademia --check   # exit 1 when 
 
 The script needs `bun` and a ChatAcademia checkout. It also fails if a skill names a tool the server does not expose. Run it whenever the server's skills or tools change, then bump `version` in `plugins/chatacademia/.claude-plugin/plugin.json`: new or renamed skills are a minor or major bump.
 
+The OpenAI plugin (`openai-plugin/`, ChatGPT and Codex) reuses these skills: after a sync run `node scripts/build-openai-plugin.mjs` (regenerates `openai-plugin/skills/` limited to the `/mcp/chatgpt` tools and validates), bump `version` in `openai-plugin/.codex-plugin/plugin.json`, and build the upload with `--zip <file>`.
+
 If a user has both this plugin and the standalone connector, Claude may see a workflow twice (plugin-namespaced and server-provided). The text is identical by construction, so either copy gives the same behavior.
 
 ## Validate

@@ -18,6 +18,7 @@ plugin. Copy and per-form field mapping: [COPY.md](COPY.md). Each target uses it
 | Goose | [goose.md](goose.md) (directory closed; registry only) | |
 | Awesome lists | [awesome-lists.md](awesome-lists.md) | |
 | Community Claude Code marketplaces | [claude-code-community.md](claude-code-community.md) | [claude-code-templates/chatacademia.json](claude-code-templates/chatacademia.json) |
+| OpenAI plugin directory (ChatGPT, Codex) | [openai.md](openai.md) | `/openai-plugin/`, `scripts/build-openai-plugin.mjs` |
 | Web forms, emails | [COPY.md](COPY.md), [emails/](emails) | |
 
 Assets: `/assets/chatacademia-icon.svg`, `-512.png`, `-400.png`, `/assets/screenshots/*.png` (1440×900).
