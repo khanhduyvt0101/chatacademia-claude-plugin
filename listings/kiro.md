@@ -19,3 +19,6 @@ Endpoint: `https://api.chatacademia.com/mcp/kiro`
 - Add to Kiro link (no listing needed):
   `https://kiro.dev/launch/mcp/add/?name=chatacademia&config=%7B%22url%22%3A%22https%3A%2F%2Fapi.chatacademia.com%2Fmcp%2Fkiro%22%7D`
   Badge: `https://kiro.dev/images/add-to-kiro.svg`
+
+- Manifest metadata: the Agent Plugins 1.0.0 schema forbids extra keys (`additionalProperties: false`), so `displayName`/icon
+  cannot go in `plugin.json`; give Kiro the logo URL `https://api.chatacademia.com/icon-512.png` in the submit form.

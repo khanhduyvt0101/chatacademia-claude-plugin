@@ -1,7 +1,11 @@
 {
   "name": "chatacademia",
-  "version": "1.0.0",
+  "displayName": "ChatAcademia",
+  "version": "1.0.1",
   "description": "Academic research tools: search papers and grants, verify citations, find research gaps, extract study data and get mock peer review.",
+  "author": "ChatAcademia",
+  "homepage": "https://www.chatacademia.com/claude",
+  "icon": "https://api.chatacademia.com/icon-512.png",
   "mcpServers": {
     "chatacademia": {
       "url": "https://api.chatacademia.com/mcp/gemini",

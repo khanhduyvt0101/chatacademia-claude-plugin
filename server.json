@@ -3,18 +3,32 @@
   "name": "com.chatacademia/chatacademia",
   "title": "ChatAcademia",
   "description": "Academic research tools: search papers and grants, verify citations, review literature and drafts.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://www.chatacademia.com/claude",
   "repository": {
     "url": "https://github.com/khanhduyvt0101/chatacademia-claude-plugin",
     "source": "github"
   },
   "icons": [
-    { "src": "https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon.svg", "mimeType": "image/svg+xml", "sizes": ["any"] },
-    { "src": "https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon-512.png", "mimeType": "image/png", "sizes": ["512x512"] },
-    { "src": "https://raw.githubusercontent.com/khanhduyvt0101/chatacademia-claude-plugin/main/assets/chatacademia-icon-400.png", "mimeType": "image/png", "sizes": ["400x400"] }
+    {
+      "src": "https://api.chatacademia.com/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://api.chatacademia.com/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
   ],
   "remotes": [
-    { "type": "streamable-http", "url": "https://api.chatacademia.com/mcp/registry" }
+    {
+      "type": "streamable-http",
+      "url": "https://api.chatacademia.com/mcp/registry"
+    }
   ]
 }

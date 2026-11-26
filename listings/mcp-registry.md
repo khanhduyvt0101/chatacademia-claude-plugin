@@ -3,6 +3,7 @@
 - File: [`/server.json`](../server.json), name `com.chatacademia/chatacademia`, remote `https://api.chatacademia.com/mcp/registry`
   (streamable-http), schema 2025-12-11. OAuth needs nothing in server.json (clients discover it from the 401).
 - Validated with `mcp-publisher validate` (v1.8.16): `✅ server.json is valid`.
+- 1.0.1 (2026-11-26): icons served by the API itself (`https://api.chatacademia.com/icon-512.png`, `/favicon.svg`).
 - Downstream: Glama (hourly sync), PulseMCP, mcp.directory, mcpservers.org and the GitHub MCP Registry read from here.
 
 ## DNS record (owner approval needed: live DNS change on zone chatacademia.com)
